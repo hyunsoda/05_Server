@@ -51,7 +51,7 @@ public class ExampleController1 extends HttpServlet{
 		resp.setContentType("text/html; charset=UTF-8");
 		
 		// 서버 -> 클라이언트로 연결되는 스트림 얻어오기
-		// 서버에서 클라이언트로 응답하는 방법은 응답 페이지(HTML 등) 만들어 보냄0
+		// 서버에서 클라이언트로 응답하는 방법은 응답 페이지(HTML 등) 만들어 보냄
 		PrintWriter out = resp.getWriter(); // 서버 -> 클라이언트에게 쓰는 것 (출력)
 		
 		out.println("<!DOCTYPE html>");
