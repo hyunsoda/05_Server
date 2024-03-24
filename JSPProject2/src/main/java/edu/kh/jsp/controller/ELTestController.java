@@ -29,6 +29,7 @@ public class ELTestController extends HttpServlet{
 	
 	
 	
+	
 	//	같은 주소여도 get이냐 post이냐에 따라 메소드 두 개 만들 수 있다
 	// elTest.jsp 요청 온 form 태그 요청 (Post 방식)
 	@Override
