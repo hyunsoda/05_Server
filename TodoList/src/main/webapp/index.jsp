@@ -39,8 +39,6 @@
 			<c:otherwise>
 				<h1>${sessionScope.loginMember.memberNickname}의 Todo List</h1>
 				
-				
-				
 				<c:choose>
 				<%-- 투두리스트가 없다면 --%>
 				<c:when test="${empty todoList}">
@@ -59,15 +57,17 @@
 									<td><a class="update-btn">수정</a></td>
 									<td><a class="delete-btn">삭제</a></td>
 								</tr>
-							
-							
 							</c:forEach>
-						
 						</table>
-				
 				</c:otherwise>
+			</c:choose>				
 				
-				</c:choose>				
+				<div class="button-div">
+					<a class="insert-btn">등록하기</a>
+					<a href="/logout" class="logout-btn">로그아웃</a>
+				</div>
+				
+				
 				
 			</c:otherwise>
 			
