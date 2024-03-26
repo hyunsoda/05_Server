@@ -1,9 +1,12 @@
 package edu.kh.todoList.member.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import edu.kh.todoList.member.model.dto.Member;
 import edu.kh.todoList.member.model.service.MemberService;
+import edu.kh.todoList.todo.model.dto.Todo;
+import edu.kh.todoList.todo.model.service.TodoService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -42,6 +45,19 @@ public class LoginController extends HttpServlet{
 				// 5-1. session 만료 시간 지정 (초 단위로 지정)
 				session.setMaxInactiveInterval(60*60); // 세션 생성 후 1시간으로 변경
 				// session 만료 시간 interval
+				
+				
+				// -------------------------------------------------------
+				
+				// 현재 로그인한 회원이 등록한 todoList 목록 조회하기
+				TodoService todoService = new TodoService();
+				
+				List<Todo> todoList = todoService.selectAll(loginMember.getMemberNo());
+				
+				session.setAttribute("todoList", todoList);
+				
+				
+				// -------------------------------------------------------
 				
 						// 이미 만들어져 있는 곳으로 재요청 => redirect
 				// 메인 페이지로 이동 재요청 ("/")
