@@ -56,8 +56,10 @@
 									<td>${todo.todoTitle}</td>
 									<td>(${todo.todoMemo})</td>
 									<td>${todo.todoDate}</td>
-									<td><a class="update-btn">수정</a></td>
-									<td><a class="delete-btn">삭제</a></td>
+									<td><a href="/update?todoNo=${todo.todoNo}" class="update-btn">수정</a></td>
+									<td><a href="/delete?todoNo=${todo.todoNo}"  
+										onclick="return confirm('정말 삭제하시겠습니까?');" <%-- 확인 누르면 true가 넘어가고 취소 누르면 false가 넘어감 --%>
+									class="delete-btn">삭제</a></td>
 								</tr>
 							</c:forEach>
 						</table>
