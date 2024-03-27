@@ -31,6 +31,8 @@
 				 	</div>
 				 	
 				 	<button>로그인</button>
+				 	
+				 	<a href="/signup" class="signup">회원가입</a>
 				</form>
 				
 			</c:when>	
@@ -63,7 +65,7 @@
 			</c:choose>				
 				
 				<div class="button-div">
-					<a class="insert-btn">등록하기</a>
+					<a href="/insert" class="insert-btn">등록하기</a>
 					<a href="/logout" class="logout-btn">로그아웃</a>
 				</div>
 				
