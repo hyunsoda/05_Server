@@ -5,11 +5,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="/resources/css/main.css">
 </head>
 <body>
 	<main>
+		<div class="a">
 		<form action="/updateProfile" method="post">
 		<p>전과하신 과의 이름을 입력해주세요</p>
 		<br>
@@ -17,6 +19,9 @@
 		
 		<button>정보 수정하기</button>
 		</form>
+		<br>
+		<a href ="/back" class="aTag">뒤로가기</a>
+		</div>
 	</main>
 
 

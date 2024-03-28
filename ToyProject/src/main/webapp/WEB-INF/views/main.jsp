@@ -6,6 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>강의 목록 조회</title>
+<link rel="stylesheet" href="/resources/css/main.css">
 </head>
 <body>
 	<h1>수강신청하기</h1>

@@ -147,6 +147,39 @@ public class StudentDAO {
 		
 		return result;
 	}
+
+
+
+	public Student searchPw(Connection conn, String inputNo, String inputMajor) throws Exception{
+		
+		Student student = null;
+		
+		try {
+			String sql = prop.getProperty("searchPW");
+			
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, inputNo);
+			pstmt.setString(2, inputMajor);
+			
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()) {
+				student = new Student();
+				student.setStudentId(inputNo);
+				student.setMajor(inputMajor);
+				student.setStudentName(rs.getString("STUDENT_NAME"));
+				student.setStudentNo(rs.getInt("STUDENT_NO"));
+				student.setStudentPw(rs.getString("STUDENT_PW"));
+				
+			}
+			
+		} finally {
+			close(rs);
+			close(pstmt);
+		}
+		
+		return student;
+	}
 	
 	
 	

@@ -2,6 +2,7 @@
 <temp-directories>
   <temp-directory age="0" key="JSPProject server" path="tmp1" recycle="false"/>
   <temp-directory age="0" key="Servlet Server" path="tmp0" recycle="false"/>
+  <temp-directory age="0" key="home Server" path="tmp1" recycle="false"/>
   <temp-directory age="0" key="toy server" path="tmp4" recycle="false"/>
   <temp-directory age="0" key="JSP2 Server" path="tmp2" recycle="false"/>
   <temp-directory age="0" key="todoList server" path="tmp3" recycle="false"/>

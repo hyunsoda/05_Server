@@ -6,36 +6,45 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="/resources/css/main.css">
 </head>
 <body>
-	<h1>${sessionScope.loginStudent.studentName}님의 신청강의 목록</h1>
-	<c:choose>
+	<main>
 	
+	<c:choose>
 	<c:when test="${empty sessionScope.regList}">
-		<h1>등록된 강의가 없습니다</h1>
-		<a href ="/back">뒤로가기</a>
+	
+	<div class="a">
+	<h1>${sessionScope.loginStudent.studentName}님의 신청강의 목록</h1>
+		<h2>등록된 강의가 없습니다</h2>
+		<a href ="/back" class="aTag">뒤로가기</a>
+	</div>
 	</c:when>
 	
 	<c:otherwise>
-	
+	<div class="a">
+	<h1>${sessionScope.loginStudent.studentName}님의 신청강의 목록</h1>
 	<table>
 		<tr>
-			<th>강의 목록</th>
-			<th>신청 취소</th>
+			<th colspan="2">강의 목록</th>
+			
 		</tr>
 		
 		<c:forEach var="reg" items="${regList}">
 			<tr>
 				<td>${reg.clsName}</td>		
 				<td><a href="/dropClass?regNo=${reg.regNo}"
-				onclick="return confirm('정말 삭제하시겠습니까?');">취소하기</a></td>
+				onclick="return confirm('정말 삭제하시겠습니까?');" class="cancel">취소하기</a></td>
 			</tr>
 			
 		</c:forEach>
 		
 	</table>
-	<a href="/back">뒤로가기</a>
+	<br>
+	<a href="/back" class="aTag">뒤로가기</a>
+	</div>
 	</c:otherwise>
 	</c:choose>
+	</main>
 </body>
 </html>

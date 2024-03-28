@@ -62,7 +62,22 @@ public class StudentService {
 		if(result > 0) commit(conn);
 		else rollback(conn);
 		
+		close(conn);
+		
 		return result;
+	}
+
+
+
+	public Student searchPw(String inputNo, String inputMajor) throws Exception{
+		
+		Connection conn = getConnection();
+		Student student = dao.searchPw(conn,inputNo,inputMajor);
+		
+		close(conn);
+				
+		
+		return student;
 	}
 
 }

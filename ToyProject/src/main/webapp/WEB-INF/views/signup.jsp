@@ -6,11 +6,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="/resources/css/main.css">
 </head>
 <body>
 <main>
+	<div class="b">
 	<h1>회원가입</h1>
 	
 	<form action="/signup" method="post">
@@ -29,11 +31,12 @@
 		
 		<p>전공</p>
 		<input type="text" name="inputMajor" id="inputMajor" required>
+		<br>
 		
-		<button>회원가입하기</button>
+		<button class="signupbtn">회원가입하기</button>
 	</form>
-	
-	
+	<a href ="/back" class="aTag">뒤로가기</a>
+	</div>
 </main>	
 
 	<c:if test="${not empty sessionScope.message}">

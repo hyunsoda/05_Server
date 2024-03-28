@@ -26,4 +26,12 @@
 		MAJOR = ?
 		WHERE STUDENT_NO = ?
 	</entry>
+	
+	<entry key="searchPw">
+		SELECT STUDENT_NO, STUDENT_ID, STUDENT_PW, STUDENT_NAME, MAJOR FROM STUDENT 
+		WHERE STUDENT_NO = ?
+		AND MAJOR = ?
+		AND STUDENT_DEL_FL = 'N'
+	</entry>
+	
 </properties>
