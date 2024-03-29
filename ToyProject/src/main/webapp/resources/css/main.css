@@ -11,7 +11,7 @@
     font-family: 'KCC-Hanbit';
     box-sizing: border-box;
    
-    
+ 
     background-repeat: no-repeat;
 
     text-align: center;
@@ -22,13 +22,14 @@
 main{
     background-image: url("../img/bgimg.jpg");
     background-size: cover;
-    width: 1500px;
+   
     height: 100vh;
     margin: 0;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 
@@ -44,12 +45,13 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+ 
 }
 
 
 .b{
     width: 400px;
-    height: 550px;
+    height: 600px;
     background-color: white;
     opacity: 0.9;
     
@@ -102,5 +104,59 @@ main{
    
     color: navy;
     line-height: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
 
+.bTag{
+    color: navy;
+    line-height: 23px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+
+
+.b > div {
+    margin-top: 1px;
+    padding: 1px;
+    
+}
+
+#title {
+    padding: 1px;
+    margin-bottom: 1px;
+}
+
+
+.section{
+    display: flex;
+}
+.section>div{
+    width: 90px;
+}
+
+.section > div:first-of-type{
+    flex-basis: 45%;
+}
+.section > div:nth-of-type(2){
+    flex-basis: 10%;
+}
+.section > div:last-of-type{
+    flex-basis: 45%;
+}
+
+
+.infoTable{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+#idBtn{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: 16px;
 }

@@ -13,7 +13,7 @@
 	<main>
 		<div class="a">
 		<form action="/updateProfile" method="post">
-		<p>전과하신 과의 이름을 입력해주세요</p>
+		<h2>전과하신 과를 입력해주세요</h2>
 		<br>
 		<input type="text" name="newMajor" id="newMajor" required>
 		

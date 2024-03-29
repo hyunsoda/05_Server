@@ -12,6 +12,9 @@
 		<div class="a">
 			<h1>${sessionScope.searchId.studentName}님의 아이디</h1>
 			<p>${searchId.studentId}</p>
+			
+			<br>
+			<a href="/" class="aTag">로그인하기</a>
 		</div>
 	</main>
 </body>

@@ -23,7 +23,7 @@
 					<form action="/login" method="post">
 						<div>
 							<p>아이디</p>
-							<input type="text" name="loginId" id="loginId">
+							<input type="text" name="loginId" id="loginId" autocomplete="off">
 						</div>
 						<div>
 							<p>비밀번호</p>
@@ -32,8 +32,9 @@
 						
 						<button class="btn">로그인</button>
 						<br>
-						<a href="/signup" >회원가입</a>
-						<a href="/searchPw" >비밀번호 찾기</a>
+						<a href="/signup" class="aTag" >회원가입</a>
+						<span>|</span>
+						<a href="/searchPw" class="aTag">아이디 찾기</a>
 						
 					
 					</form>
@@ -49,10 +50,11 @@
 					<c:when test="${empty classList}">
 					<div class="a">
 					<h1>${sessionScope.loginStudent.studentName}님의 수강신청</h1>
-						<h2>개설된 강의가 없습니다!</h2>
+						<h2>아직 개설된 강의가 없습니다!</h2>
 						<div>
 							<a href="/updateProfile" class="aTag">학과 수정</a>
 						</div>
+						<br>
 						<div>
 							<a href="/logout" class="aTag">로그아웃</a>
 						</div>
@@ -62,7 +64,7 @@
 					<c:otherwise>
 					<div class="a">
 					<h1>${sessionScope.loginStudent.studentName}님의 수강신청</h1>
-					<p>본인 전공 강의만 조회 및 신청 가능합니다!</p>
+					<p>본인 전공 강의만 조회 가능합니다!</p>
 					<div class="table">
 						<table >
 							<tr>
@@ -82,18 +84,26 @@
 							</c:forEach>
 						</table>
 						</div>
+						<section class="section">
 								<div class="height">
-								<a href="/registerList" class="aTag">전체 내역 조회</a>
+								<a href="/registerList" class="bTag">신청 내역 조회</a>
 								</div>
+							<div></div>
+								<div class="height">
+								<a href="/info" class="bTag">학생 정보 조회</a>
+								</div> 
+						</section>	
+						<section class="section">
+								<div class="height">
+								<a href="/updateProfile" class="bTag">학과 수정</a>
+								</div>
+								<div></div>
+								<div class="height">
+									<a href="/logout" class="bTag">로그아웃</a>
+								</div>
+						</section>		
 								
-								<div class="height">
-								<a href="/updateProfile" class="aTag">학과 수정</a>
-								</div>
-								
-								<div class="height">
-									<a href="/logout" class="aTag">로그아웃</a>
-								</div>
-								</div>
+							</div>	
 					</c:otherwise>
 				
 				</c:choose>

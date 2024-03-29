@@ -3,6 +3,8 @@ package edu.kh.toy.student.controller;
 import java.io.IOException;
 import java.util.List;
 
+import edu.kh.toy.classes.model.dto.Cls;
+import edu.kh.toy.classes.model.service.ClassService;
 import edu.kh.toy.register.model.dto.Register;
 import edu.kh.toy.register.model.service.RegisterService;
 import edu.kh.toy.student.model.dto.Student;
@@ -37,27 +39,46 @@ public class UpdateProfileController extends HttpServlet{
 			int result = service.updateProfile(std, newMajor);
 			
 			if(result > 0) {
-				session.setAttribute("message", "수정이 완료되었습니다. \n 다시 로그인해주세요");
+				// session.setAttribute("message", "수정이 완료되었습니다. \n 다시 로그인해주세요");
 				RegisterService rservice = new RegisterService();
+				
+				String loginId = ((Student)session.getAttribute("loginStudent")).getStudentId();
+				String loginPw = ((Student)session.getAttribute("loginStudent")).getStudentPw();
+				
+				Student loginStudent = service.login(loginId, loginPw);
+				
+				session.setAttribute("loginStudent", loginStudent);
+				
 				List<Register> regList = rservice.selectAll(std.getStudentNo());
 				session.setAttribute("regList", regList);
 				
-				if(regList != null) {
-					session.setAttribute("regList", regList);
-					
-					req.getRequestDispatcher("/WEB-INF/views/registerList.jsp").forward(req, resp);
-					
-					
-					
-				} else {
-					session.setAttribute("message", "신청한 강의가 없습니다");
-					resp.sendRedirect(req.getHeader("referer"));
-				}
+				
+				
+				ClassService clsService = new ClassService();
+				List<Cls> classList = clsService.selectAll(loginStudent.getMajor());
+				session.setAttribute("classList", classList);
+				
+				
+				session.setAttribute("message", "수정이 완료되었습니다");
+				resp.sendRedirect("/");
+				
+//				if(regList != null) {
+//					
+//					
+//					req.getRequestDispatcher("/WEB-INF/views/registerList.jsp").forward(req, resp);
+//					
+//					
+//					
+//				} else {
+//					session.setAttribute("message", "신청한 강의가 없습니다");
+//					
+//					resp.sendRedirect(req.getHeader("referer"));
+//				}
 				
 				
 				
 				//session.invalidate();
-				 resp.sendRedirect("/");
+			
 			} else {
 				session.setAttribute("message", "수정을 실패하였습니다");
 					String referer = req.getHeader("referer");

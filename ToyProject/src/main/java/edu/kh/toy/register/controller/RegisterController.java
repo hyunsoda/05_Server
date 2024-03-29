@@ -30,7 +30,7 @@ public class RegisterController extends HttpServlet{
 			int result = service.duplicationCheck(clsName,student.getStudentNo());
 			
 			if(result>0) {
-				session.setAttribute("message", "같은 강의를 신청할 수 없습니다.");
+				session.setAttribute("message", "이미 신청한 강의입니다.");
 				resp.sendRedirect("/");
 			} else {
 				

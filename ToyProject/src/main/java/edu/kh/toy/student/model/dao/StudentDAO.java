@@ -155,7 +155,7 @@ public class StudentDAO {
 		Student student = null;
 		
 		try {
-			String sql = prop.getProperty("searchPW");
+			String sql = prop.getProperty("searchId");
 			
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, inputNo);
@@ -165,7 +165,8 @@ public class StudentDAO {
 			
 			if(rs.next()) {
 				student = new Student();
-				student.setStudentId(inputNo);
+				
+				student.setStudentId(rs.getString("STUDENT_ID"));
 				student.setMajor(inputMajor);
 				student.setStudentName(rs.getString("STUDENT_NAME"));
 				student.setStudentNo(rs.getInt("STUDENT_NO"));

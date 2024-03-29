@@ -34,20 +34,23 @@
     <fullyQualifiedTypeName name="edu.kh.toy.classes.model.dao.ClassDAO"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="edu.kh.toy.classes.model.dto.Class"/>
-    <fullyQualifiedTypeName name="edu.kh.toy.classes.model.dto.Cls"/>
     <fullyQualifiedTypeName name="edu.kh.toy.register.model.dao.RegisterDAO"/>
     <fullyQualifiedTypeName name="edu.kh.toy.common.JDBCTemplate"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="javax.annotation.processing.SupportedSourceVersion"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="edu.kh.toy.register.model.dto.Register"/>
     <fullyQualifiedTypeName name="jakarta.servlet.jsp.HttpJspPage"/>
     <fullyQualifiedTypeName name="edu.kh.toy.register.model.service.RegisterService"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
-    <fullyQualifiedTypeName name="edu.kh.toy.student.model.service.StudentService"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="edu.kh.toy.classes.model.dto.Cls"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="jakarta.websocket.Session"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="edu.kh.toy.student.model.service.StudentService"/>
     <fullyQualifiedTypeName name="edu.kh.toy.student.model.dto.Student"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 </qualifiedTypeNameHistroy>

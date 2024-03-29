@@ -1,6 +1,7 @@
 package edu.kh.toy.student.controller;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 
 import edu.kh.toy.student.model.dto.Student;
 import edu.kh.toy.student.model.service.StudentService;
@@ -33,10 +34,13 @@ public class SearchPwController extends HttpServlet{
 			
 			if(student != null) {
 				session.setAttribute("searchId", student);
+				
 				req.getRequestDispatcher("/WEB-INF/views/searchId2.jsp").forward(req, resp);
+				
 			} else {
 				session.setAttribute("message", "찾으시는 정보가 없습니다.");
-				resp.sendRedirect("/");
+				String referer = req.getHeader("referer");
+				resp.sendRedirect(referer);
 			}
 			
 		} catch(Exception e) {
