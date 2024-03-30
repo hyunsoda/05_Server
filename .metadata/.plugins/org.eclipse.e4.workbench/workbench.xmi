@@ -195,8 +195,9 @@
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_8a9kMOcfEe6XnpAC4AciEQ" elementId="org.eclipse.ui.editorss" selectedElement="_y8olEO1gEe6HSJeeHAmdjg">
       <children xsi:type="basic:PartSashContainer" xmi:id="_y8olEO1gEe6HSJeeHAmdjg" selectedElement="_WlvccO1qEe6HSJeeHAmdjg">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_WlvccO1qEe6HSJeeHAmdjg" containerData="5989" selectedElement="_Wlvcce1qEe6HSJeeHAmdjg" horizontal="true">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_WlvccO1qEe6HSJeeHAmdjg" containerData="5989" selectedElement="_C4EWMef_Ee6l2ZTCz4PkDw" horizontal="true">
           <children xsi:type="basic:PartStack" xmi:id="_C4EWMef_Ee6l2ZTCz4PkDw" elementId="PartStack@7024e42" containerData="5933" selectedElement="_UL4cwO2kEe6B0tkMtW4R2Q">
+            <tags>active</tags>
             <children xsi:type="advanced:Placeholder" xmi:id="_8d7YtucfEe6XnpAC4AciEQ" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_8d3HMucfEe6XnpAC4AciEQ" closeable="true">
               <tags>View</tags>
               <tags>categoryTag:General</tags>
@@ -354,21 +355,20 @@
               <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
             </children>
             <children xsi:type="basic:Part" xmi:id="_UL4cwO2kEe6B0tkMtW4R2Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="searchPw.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;searchPw.jsp&quot; partName=&quot;searchPw.jsp&quot; title=&quot;searchPw.jsp&quot; tooltip=&quot;ToyProject/src/main/webapp/WEB-INF/views/searchPw.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ToyProject/src/main/webapp/WEB-INF/views/searchPw.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;821&quot; selectionTopPixel=&quot;466&quot;/>&#xD;&#xA;&lt;/editor>"/>
-              <tags>Editor</tags>
-              <tags>removeOnHide</tags>
-              <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
-            </children>
-          </children>
-          <children xsi:type="basic:PartStack" xmi:id="_Wlvcce1qEe6HSJeeHAmdjg" elementId="PartStack@5317a510" containerData="5000" selectedElement="_WJQ70O1qEe6HSJeeHAmdjg">
-            <tags>active</tags>
-            <children xsi:type="basic:Part" xmi:id="_WJQ70O1qEe6HSJeeHAmdjg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="signup.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;signup.jsp&quot; partName=&quot;signup.jsp&quot; title=&quot;signup.jsp&quot; tooltip=&quot;TodoList/src/main/webapp/WEB-INF/views/signup.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TodoList/src/main/webapp/WEB-INF/views/signup.jsp&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;234&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;712&quot; selectionTopPixel=&quot;108&quot;/>&#xD;&#xA;&lt;/editor>"/>
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;searchPw.jsp&quot; partName=&quot;searchPw.jsp&quot; title=&quot;searchPw.jsp&quot; tooltip=&quot;ToyProject/src/main/webapp/WEB-INF/views/searchPw.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ToyProject/src/main/webapp/WEB-INF/views/searchPw.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
               <tags>Editor</tags>
               <tags>removeOnHide</tags>
               <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
               <tags>active</tags>
               <tags>activeOnClose</tags>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_Wlvcce1qEe6HSJeeHAmdjg" elementId="PartStack@5317a510" containerData="5000" selectedElement="_WJQ70O1qEe6HSJeeHAmdjg">
+            <children xsi:type="basic:Part" xmi:id="_WJQ70O1qEe6HSJeeHAmdjg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="signup.jsp" iconURI="platform:/plugin/org.eclipse.jst.jsp.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;signup.jsp&quot; partName=&quot;signup.jsp&quot; title=&quot;signup.jsp&quot; tooltip=&quot;TodoList/src/main/webapp/WEB-INF/views/signup.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TodoList/src/main/webapp/WEB-INF/views/signup.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
+              <tags>Editor</tags>
+              <tags>removeOnHide</tags>
+              <tags>org.eclipse.jst.jsp.core.jspsource.source</tags>
             </children>
             <children xsi:type="basic:Part" xmi:id="_bRfhcO2MEe6HSJeeHAmdjg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="RegisterController.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
               <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;RegisterController.java&quot; partName=&quot;RegisterController.java&quot; title=&quot;RegisterController.java&quot; tooltip=&quot;ToyProject/src/main/java/edu/kh/toy/register/controller/RegisterController.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ToyProject/src/main/java/edu/kh/toy/register/controller/RegisterController.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;46&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;551&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -602,7 +602,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8ZLbgOcfEe6XnpAC4AciEQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_J0s2QO2TEe6B0tkMtW4R2Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_8OIpL-cfEe6XnpAC4AciEQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5usOoO3XEe6KHcCyYjoXNw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_8OIpL-cfEe6XnpAC4AciEQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8ZMCkOcfEe6XnpAC4AciEQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -610,8 +610,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8ZMCkucfEe6XnpAC4AciEQ" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_J0uEYe2TEe6B0tkMtW4R2Q" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_8OG0AOcfEe6XnpAC4AciEQ"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_J0urcO2TEe6B0tkMtW4R2Q" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_8OHbE-cfEe6XnpAC4AciEQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5uvR8O3XEe6KHcCyYjoXNw" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_8OG0AOcfEe6XnpAC4AciEQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5uv5AO3XEe6KHcCyYjoXNw" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_8OHbE-cfEe6XnpAC4AciEQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8ZMCk-cfEe6XnpAC4AciEQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -641,7 +641,10 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8ZMCl-cfEe6XnpAC4AciEQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_J0vSgO2TEe6B0tkMtW4R2Q" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_8OICjucfEe6XnpAC4AciEQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5uwgEO3XEe6KHcCyYjoXNw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_8OICjucfEe6XnpAC4AciEQ"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_6VIjkO3XEe6KHcCyYjoXNw" elementId="org.eclipse.jst.jsp.core.jspsource.source" visible="false">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_8ZMCmOcfEe6XnpAC4AciEQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3238,7 +3241,7 @@
   <addons xmi:id="_8Nz5FucfEe6XnpAC4AciEQ" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_8Nz5F-cfEe6XnpAC4AciEQ" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_8N5YkOcfEe6XnpAC4AciEQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_Js-doO2TEe6B0tkMtW4R2Q" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_8OEXsOcfEe6XnpAC4AciEQ" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_8OEXsecfEe6XnpAC4AciEQ" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>
